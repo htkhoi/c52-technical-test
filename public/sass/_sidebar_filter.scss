@@ -1,0 +1,44 @@
+#filter_sidebar {
+  background: #fff;
+  padding-top: 25px;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  text-indent: 25px;
+  width: 250px;
+  float: left;
+  .range_filter {
+    padding-bottom: 10px;
+    h3 {
+      font-size: 18px;
+      color: #404040;
+      margin: 0px;
+      padding: 0px;
+    }
+    ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      li {
+        line-height: 30px;
+        color: #757575;
+        cursor: pointer;
+        &.active_icon {
+          background: #8ac007 url(../images/check.png) no-repeat 165px;
+          border-radius: 5px;
+          color: #fff;
+          display: block;
+          margin-left: 25px;
+          text-indent: 5px;
+          width: 200px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .count_result_filter {
+    border-top: 1px solid #d7d7d7;
+    margin-top: 20px;
+    line-height: 60px;
+    height: 60px;
+  }
+}
