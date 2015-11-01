@@ -1,0 +1,14 @@
+{
+    "camera_filters": [
+        {
+            "value": "5",
+            "label": "5MP"
+        }, {
+            "value": "8",
+            "label": "8MP"
+        }, {
+            "value": "16",
+            "label": "16MP"
+        }
+    ]
+}
