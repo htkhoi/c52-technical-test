@@ -10,7 +10,13 @@
                 <div class="range_filter">
                     <h3>Price</h3>
                     <ul>
-                        <li ng-repeat="price in priceFilters">
+                        <li ng-if="filter.price" ng-click="filter.price=''; getDataFilter()" class="active_icon">
+                            {{filter.price.label}}
+                        </li>
+                    </ul>
+                    <ul ng-hide="filter.price">
+                        <li ng-repeat="price in priceFilters"
+                        ng-click="filter.price = price; getDataFilter();">
                             {{price.label}}
                         </li>
                     </ul>
@@ -19,7 +25,12 @@
                 <div class="range_filter">
                     <h3>Screen Size</h3>
                     <ul>
-                        <li ng-repeat="screensize in screensizeFilters">
+                        <li ng-if="filter.screensize" ng-click="filter.screensize=''; getDataFilter()" class="active_icon">
+                            {{filter.screensize.label}}
+                        </li>
+                    </ul>
+                    <ul ng-hide="filter.screensize">
+                        <li ng-repeat="screensize in screensizeFilters"  ng-click="filter.screensize = screensize; getDataFilter()">
                             {{screensize.label}}
                         </li>
                     </ul>
@@ -28,17 +39,22 @@
                 <div class="range_filter">
                     <h3>Rear-facing camera</h3>
                     <ul>
-                        <li ng-repeat="camera in cameraFilters">
+                        <li ng-if="filter.camera" ng-click="filter.camera=''; getDataFilter()" class="active_icon">
+                            {{filter.camera.label}}
+                        </li>
+                    </ul>
+                    <ul ng-hide="filter.camera">
+                        <li ng-repeat="camera in cameraFilters" ng-click="filter.camera = camera; getDataFilter();">
                             {{camera.label}}
                         </li>
                     </ul>
                 </div>
                 <div class="count_result_filter">
-                    Found 0 products
+                    Found {{ products.length }} products
                 </div>
             </div>
 
-            <div id="list_product">
+            <div id="list_product" ng-init="init()">
             	<div class="item" ng-repeat="product in products">
                     <div class="list_image_product">
                         <img src="{{product.device.images[0].url}}" />
@@ -71,5 +87,5 @@
         <script src="/vendor/angular.min.js.map"></script>
         <script data-require="lodash.js@*" data-semver="2.4.1" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
         <script src="/scripts/controllers/filters.js"></script>
-    </body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
 </html>
