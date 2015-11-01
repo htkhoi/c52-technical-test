@@ -72,7 +72,7 @@ body {
         color: #757575;
         cursor: pointer; }
         #filter_sidebar .range_filter ul li.active_icon {
-          background: #8ac007 url(../images/check.png) no-repeat 165px;
+          background: #8ac007 url(../images/clear.png) no-repeat 165px;
           border-radius: 5px;
           color: #fff;
           display: block;
