@@ -94,6 +94,7 @@
             ]
         };
 
+        /** Price Filter Options **/
         $http.get('/range_price_data.json').then(function(response){
             $scope.priceFilters = response.data['price_filters'];
         });
