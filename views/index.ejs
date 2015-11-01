@@ -39,98 +39,30 @@
             </div>
 
             <div id="list_product">
-            	<div class="item">
+            	<div class="item" ng-repeat="product in products">
                     <div class="list_image_product">
-                        <img src="//images.comparebusinessphones.co.uk/SCWiqf-Samsung_S6_black_front.png">
+                        <img src="{{product.device.images[0].url}}" />
                     </div>
                     <div class="list_product_info">
-                        <span>Samsung</span>
-                        <h3>Galaxy S6</h3>
+                        <span>{{ product.device.brand }}</span>
+                        <h3>{{ product.device.model }}</h3>
                         <ul>
-                            <li>Android</li>
-                            <li>Galaxy S6</li>
-                            <li>16 Megapixel camera</li>
-                            <li>5.1"</li>
+                            <li>{{ product.device.os }}</li>
+                            <li>{{ product.device.model }}</li>
+                            <li>{{ product.device.camera }} Megapixel camera</li>
+                            <li>{{ product.device.screensize }}"</li>
                         </ul>
                         <p>
-                            <a class="readmore" href="#">View Product →</a>
+                            <a href="#" class='readmore'>View Product →</a>
                         </p>
                     </div>
                     <div class="list_product_price">
-                        <span>£ 410.52</span>
+                        <span>£ {{ product.price }}</span>
                         <small>ex. VAT</small>
                     </div>
                 </div>
 
-                <div class="item">
-                    <div class="list_image_product">
-                        <img src="//images.comparebusinessphones.co.uk/SCWiqf-Samsung_S6_black_front.png">
-                    </div>
-                    <div class="list_product_info">
-                        <span>Samsung</span>
-                        <h3>Galaxy S6</h3>
-                        <ul>
-                            <li>Android</li>
-                            <li>Galaxy S6</li>
-                            <li>16 Megapixel camera</li>
-                            <li>5.1"</li>
-                        </ul>
-                        <p>
-                            <a class="readmore" href="#">View Product →</a>
-                        </p>
-                    </div>
-                    <div class="list_product_price">
-                        <span>£ 410.52</span>
-                        <small>ex. VAT</small>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="list_image_product">
-                        <img src="//images.comparebusinessphones.co.uk/SCWiqf-Samsung_S6_black_front.png">
-                    </div>
-                    <div class="list_product_info">
-                        <span>Samsung</span>
-                        <h3>Galaxy S6</h3>
-                        <ul>
-                            <li>Android</li>
-                            <li>Galaxy S6</li>
-                            <li>16 Megapixel camera</li>
-                            <li>5.1"</li>
-                        </ul>
-                        <p>
-                            <a class="readmore" href="#">View Product →</a>
-                        </p>
-                    </div>
-                    <div class="list_product_price">
-                        <span>£ 410.52</span>
-                        <small>ex. VAT</small>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="list_image_product">
-                        <img src="//images.comparebusinessphones.co.uk/SCWiqf-Samsung_S6_black_front.png">
-                    </div>
-                    <div class="list_product_info">
-                        <span>Samsung</span>
-                        <h3>Galaxy S6</h3>
-                        <ul>
-                            <li>Android</li>
-                            <li>Galaxy S6</li>
-                            <li>16 Megapixel camera</li>
-                            <li>5.1"</li>
-                        </ul>
-                        <p>
-                            <a class="readmore" href="#">View Product →</a>
-                        </p>
-                    </div>
-                    <div class="list_product_price">
-                        <span>£ 410.52</span>
-                        <small>ex. VAT</small>
-                    </div>
-                </div>
-                <div class="notfound">
+                <div ng-if="messages" class="notfound">
                     No results found
                 </div>
             </div>
