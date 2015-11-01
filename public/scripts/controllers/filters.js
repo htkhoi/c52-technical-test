@@ -1,6 +1,7 @@
 (function () {
     'use strict';
-    angular.module('TechicalTest', []).controller('ProductFiltersController', function($scope, $http) {
+    angular.module('TechicalTest', []).controller('ProductFiltersController',
+        function($scope, $http) {
 
         /** Price Filter Options **/
         $http.get('/range_price_data.json').then(function(response){
@@ -16,5 +17,12 @@
         $http.get('/range_camera_data.json').then(function(response){
             $scope.cameraFilters = response.data['camera_filters'];
         });
+
+        /** GET Products **/
+        var products = $http.get("/data.json").then(function(response) {
+            $scope.products = products = response.data['products'];
+        });
+
+        $scope.messages = false;
     });
 })();

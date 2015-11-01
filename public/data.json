@@ -1,0 +1,89 @@
+{
+    "products": [
+        {
+            "_id": 1,
+            "device": {
+                "brand": "Samsung",
+                "camera": 16,
+                "colours": [
+                    {
+                        "name": "black"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "//images.comparebusinessphones.co.uk/SCWiqf-Samsung_S6_black_front.png"
+                    }
+                ],
+                "memory": "32GB",
+                "model": "Galaxy S6",
+                "os": "Android",
+                "screensize": 5.1
+            },
+            "price": 410.52
+        }, {
+            "_id": 2,
+            "device": {
+                "brand": "Samsung",
+                "camera": 13,
+                "colours": [
+                    {
+                        "name": "white"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "//images.comparebusinessphones.co.uk/57XB2L-Samsung_A5_front-regular.png"
+                    }
+                ],
+                "memory": null,
+                "model": "Galaxy A5",
+                "os": "Android",
+                "screensize": 5
+            },
+            "price": 225.67
+        }, {
+            "_id": 3,
+            "device": {
+                "brand": "Samsung",
+                "camera": 8,
+                "colours": [
+                    {
+                        "name": "black"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "//images.comparebusinessphones.co.uk/VKxb9J-Samsung_A3_bloack_front.png"
+                    }
+                ],
+                "memory": null,
+                "model": "Galaxy A3",
+                "os": "Android",
+                "screensize": 4.5
+            },
+            "price": 175.87
+        }, {
+            "_id": 4,
+            "device": {
+                "brand": "Samsung",
+                "camera": 5,
+                "colours": [
+                    {
+                        "name": "white"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "//images.comparebusinessphones.co.uk/8qSxUM-Samsung-S3-mini-White_Front.png"
+                    }
+                ],
+                "memory": "16GB",
+                "model": "Galaxy S3 Mini",
+                "os": "Android",
+                "screensize": 4
+            },
+            "price": 175.87
+        }
+    ]
+}
