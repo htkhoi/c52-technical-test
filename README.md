@@ -2,7 +2,7 @@
 
 Dear Sir,
 
-This is my technical tes
+This is my technical test
 
 To run it. You do follow conduct below
 
