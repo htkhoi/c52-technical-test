@@ -10,16 +10,17 @@ To run it. You do follow conduct below
 
  -> cd to folder project
 
- -> sudo npm install 
+ 	step 1 : npm run dev
 
- -> gulp
+ 	step 2 : npm run start
 
-Start server: 
 
- -> cd bin
+	step 3: Start server: 
 
- -> nodejs www
- or -> node www
+ 		-> cd bin
+
+ 		-> nodejs www
+ 		or -> node www
 
 
 
