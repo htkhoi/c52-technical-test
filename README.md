@@ -13,14 +13,3 @@ To run it. You do follow conduct below
  	step 1 : npm run dev
 
  	step 2 : npm run start
-
-
-	step 3: Start server: 
-
- 		-> cd bin
-
- 		-> nodejs www
- 		or -> node www
-
-
-
