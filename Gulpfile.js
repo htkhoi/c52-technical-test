@@ -19,4 +19,4 @@ gulp.task('watch', function () {
     gulp.watch('./public/sass/**/*.scss', ['sass']);
 });
 
-gulp.task('default', ['sass', 'watch']);
+gulp.task('dev', ['sass', 'watch']);
