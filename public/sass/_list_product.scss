@@ -1,36 +1,36 @@
 #list_product {
-  width: 700px;
+  width: 70%;
   float: left;
-  margin-left: 30px;
+  margin-left: 5%;
   .item {
     clear: left;
-    border: 1px solid #d7d7d7;
     border-radius: 5px;
     background: #fff;
     float: left;
-    width: 700px;
+    width: 100%;
     margin-bottom: 30px;
+    padding-bottom: 30px;
+    position: relative;
     .list_image_product {
       float: left;
-      width: 250px;
+      width: auto;
       text-align: center;
       border-right: 1px solid #d7d7d7;
       padding-top: 45px;
-      padding-bottom: 45px;
+      padding-bottom: 65px;
     }
   }
   .list_image_product img {
-    max-height: 200px;
+    max-height: 210px;
+    width: auto;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   .list_product_info {
     text-indent: 50px;
-    width: 335px;
-    float: left;
     h3 {
-      font-size: 20px;
-      font-weight: bold;
       margin: 0 0 15px;
-      padding: 0;
+      padding: 0px;
     }
     span {
       text-transform: uppercase;
@@ -41,6 +41,7 @@
     ul {
       margin: 0px;
       padding: 0px;
+      min-width: 200px;
       li {
         color: #757575;
         font-size: 14px;
@@ -57,11 +58,42 @@
       font-size: 16px;
       margin-top: 25px;
     }
-    .list_product_price span {
-      display: block;
-      font-weight: 800px;
-      font-size: 18px;
-      margin-top: 15px;
+    .list_product_price {
+      position: absolute;
+      top: 0px;
+      right: 10px;
+      span {
+        display: block;
+        font-weight: 800px;
+        font-size: 18px;
+        margin-top: 15px;
+      }
+      small {
+        text-indent: 50px;
+        display: block;
+      }
     }
+  }
+}
+
+.navbar_toggle {
+  width: 90%;
+  max-width: 550px;
+  height: 45px;
+  background: #628DB6;
+  cursor: pointer;
+  display: none;
+  line-height: 45px;
+  color: #FFF;
+  text-indent: 10px;
+  font-size: 18px;
+  a {
+    text-decoration: none;
+    float: right;
+    background: #000;
+    color: #FFF;
+    padding-right: 10px;
+    padding-left: 6px;
+    font-weight: bold;
   }
 }

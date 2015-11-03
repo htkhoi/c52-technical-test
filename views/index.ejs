@@ -2,11 +2,19 @@
 <html>
     <head>
         <title><%= title %></title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+        <link href="styles.css" rel="stylesheet" media="all and (max-width: 1024px)">
         <link rel="stylesheet" type="text/css" href="css/main.css" />
     </head>
     <body ng-app="TechicalTest">
         <div ng-controller='ProductFiltersController'>
-            <div id="filter_sidebar">
+            <div class="navbar_toggle">
+                Found {{ products.length }} products
+                <a href="#" class="icon" ng-click="clickShowHide()">
+                    Filter
+                </a>
+            </div>
+            <div id="filter_sidebar" ng-if='status'>
                 <div class="range_filter">
                     <h3>Price</h3>
                     <ul>
@@ -55,7 +63,7 @@
             </div>
 
             <div id="list_product" ng-init="init()">
-            	<div class="item" ng-repeat="product in products">
+                <div class="item" ng-repeat="product in products">
                     <div class="list_image_product">
                         <img src="{{product.device.images[0].url}}" />
                     </div>
@@ -68,13 +76,13 @@
                             <li>{{ product.device.camera }} Megapixel camera</li>
                             <li>{{ product.device.screensize }}"</li>
                         </ul>
+                        <div class="list_product_price">
+                            <span>£ {{ product.price }}</span>
+                            <small>ex. VAT</small>
+                        </div>
                         <p>
                             <a href="#" class='readmore'>View Product →</a>
                         </p>
-                    </div>
-                    <div class="list_product_price">
-                        <span>£ {{ product.price }}</span>
-                        <small>ex. VAT</small>
                     </div>
                 </div>
 

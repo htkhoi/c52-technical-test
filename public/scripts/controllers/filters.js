@@ -3,7 +3,8 @@
     angular.module('TechicalTest', []).controller('ProductFiltersController', function($scope, $http) {
         $scope.filter = {};
         $scope.messages = false;
-        
+        $scope.status = true;
+
         var products = {
             "products": [
                 {
@@ -110,7 +111,6 @@
         });
 
         $scope.init = function() {
-
             //***Keep result product filter when load page***/
             if (sessionStorage.products) {
                 $scope.products = JSON.parse(sessionStorage.products); 
@@ -171,6 +171,15 @@
             }
         }
 
+        /**Show Hide Filter**/
+        $scope.clickShowHide = function() {
+            if ($scope.status == true) {
+                $scope.status = false;
+            } else {
+                $scope.status = true;
+            }
+        }
+
         var checkPrice = function(arr, price_filter, callback) {
             var products = [];
             var priceSpilit = price_filter.split(':');
@@ -198,5 +207,3 @@
         }
     });
 })();
-
-

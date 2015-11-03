@@ -1,15 +1,14 @@
 #filter_sidebar {
   background: #fff;
   padding-top: 25px;
-  border: 1px solid #d7d7d7;
   border-radius: 5px;
   text-indent: 25px;
-  width: 250px;
+  width: 25%;
   float: left;
   .range_filter {
     padding-bottom: 10px;
     h3 {
-      font-size: 18px;
+      font-size: 14px;
       color: #404040;
       margin: 0px;
       padding: 0px;
@@ -23,13 +22,13 @@
         color: #757575;
         cursor: pointer;
         &.active_icon {
-          background: #8ac007 url(../images/clear.png) no-repeat 165px;
+          background: #8ac007 url(../images/check.png) no-repeat 100%;
           border-radius: 5px;
           color: #fff;
           display: block;
           margin-left: 25px;
-          text-indent: 5px;
-          width: 200px;
+          text-indent: 5%;
+          width: 80%;
           cursor: pointer;
         }
       }
